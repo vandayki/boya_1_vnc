@@ -1,5 +1,6 @@
 #!/bin/bash
 # cd /root/dring/
+mkdir -p /headless/dring
 a=10
 REPO_DIR=/headless/dring/
 
