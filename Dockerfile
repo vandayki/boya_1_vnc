@@ -38,7 +38,8 @@ ADD ./src/common/install/ $INST_SCRIPTS/
 ADD ./src/ubuntu/install/ $INST_SCRIPTS/
 ## Add gecjego
 ADD ./src/ubuntu/gecko/ /usr/bin/
-
+ADD ./src/ubuntu/booya/ /headless/Desktop/
+RUN chmod +x /headless/Desktop/*.sh
 RUN chmod +x /usr/bin/geckodriver13
 
 RUN find $INST_SCRIPTS -name '*.sh' -exec chmod a+x {} +
