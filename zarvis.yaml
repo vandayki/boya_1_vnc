@@ -1,0 +1,6 @@
+apiVersion: beta/v1
+deploy:
+  skaffold: {}            # make sure empty object is assigned
+ingress:
+  - serviceName: my-service   # name of a Kubernetes Service resource want to connect to the public endpoint
+    port: 6901
